@@ -7,10 +7,8 @@ Main file for testing
 def minOperations(n):
     """calculates the fewest number of operations needed
     to result in exactly n H characters in the file"""
-    if n == 0:
+    if n <= 1:
         return 0
-    if n == 1:
-        return 1
     # copy all means copy = character
     # paste means character += copy
     character = 1
